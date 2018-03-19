@@ -1,0 +1,6 @@
+AmountOfEmployees Kuinka monta työntekijää ?
+AmountOfEmployees Kuinka monta työntekijää Metatavulla on ?
+AmountOfEmployees Ketä siellä työskentelee ?
+AmountOfEmployees Työntekijöiden määrä ?
+AmountOfEmployees Työntekijöiden määrä ?
+AmountOfEmployees Kuinka moni työskentelee Metatavulla ?

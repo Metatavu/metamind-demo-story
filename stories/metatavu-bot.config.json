@@ -1,0 +1,69 @@
+{
+  "maxAttemptsBeforeConfused": 3,
+  "confusedKnotName": "confused_bot",
+  "globalIntents": {
+    "Swearing": "swearing",
+    "WantToChangeSubject": "show_subjects",
+    "Help": "help",
+    "Pizza": "pizza",
+    "WhatCanYouDo": "what_bot_can_do"
+  },
+  "machineLearning": {
+    "slotModels": {
+    },
+    "intentModel": "fi-metatavu-bot",
+    "intents": {
+      "AmountOfEmployees": {},
+      "Pizza": {},
+      "Help": {},
+      "Mikkeli": {},
+      "Mantyharju": {},
+      "WhatEver": {},
+      "Greeting": {},
+      "GeneranGuestion": {},
+      "WhoAreYou": {},
+      "WhatCanYouDo": {},
+      "Shouting": {},
+      "WannaTry": {},
+      "Yes": {},
+      "No": {},
+      "KuntaApi": {},
+      "Metatavu": {},
+      "Weather": {},
+      "Jesus": {},
+      "INIT": {},
+      "WhatProductCanDo": {},
+      "Doubt": {},
+      "GaveEmail": {},
+      "WantToChangeSubject": {},
+      "WhenFounded": {},
+      "Smiley": {},
+      "BackToBusiness": {},
+      "WhereProductIsUsed": {},
+      "GoForward": {},
+      "TellAgain": {},
+      "TellMore": {}
+    }
+  },
+  "template": {
+    "tokenization": {
+      "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$": {
+        "comment": "Email",
+        "untokenized": true
+      }
+    },
+    "intents": {
+      "GaveEmail": {
+        "utterances": [
+          "{email}",
+          "Sähköpostini on {email}",
+          "Sähköposti: {email}"
+        ],
+        "regExSlots": [{
+          "name": "Email",
+          "pattern": "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"
+        }]
+      }
+    }
+  }
+}
