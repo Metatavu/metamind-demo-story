@@ -14,6 +14,8 @@ To use these story and config files you will need:
 #### Concatenate intents
 OpenNLP accepts only 1 training data file as parameter when training with `DoccatTrainer` class. You can concate all intent files from folder `./intents` by using `./concate-intents` script.
 
+__Make sure that you have empty line at end of every intent file__
+
 #### Training using OpenNLP
 You can train with `DoccatTrainer` with following commands:
 
@@ -21,4 +23,5 @@ You can train with `DoccatTrainer` with following commands:
 
 `${NPL_BIN}/opennlp DoccatTrainer -model ./intents/bin/fi-metatavu-bot.bin -lang fi -data ./intents/MetatavuBotIntents.txt -encoding UTF-8 -featureGenerators opennlp.tools.doccat.NGramFeatureGenerator,opennlp.tools.doccat.BagOfWordsFeatureGenerator -params ./params/MetatavuBotIntentsParams.txt
 `
+
 _Note: You can add/remove featureGenerators as you like_
