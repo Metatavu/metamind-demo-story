@@ -24,4 +24,4 @@ You can train with `DoccatTrainer` with following commands:
 `${NPL_BIN}/opennlp DoccatTrainer -model ./intents/bin/fi-metatavu-bot.bin -lang fi -data ./intents/MetatavuBotIntents.txt -encoding UTF-8 -featureGenerators opennlp.tools.doccat.NGramFeatureGenerator,opennlp.tools.doccat.BagOfWordsFeatureGenerator -params ./params/MetatavuBotIntentsParams.txt
 `
 
-_Note: You can add/remove featureGenerators as you like_
+_Note: You can add/remove featureGenerators as you like. You can also change model urls, just make sure you use correct urls while configuring Metamind_
