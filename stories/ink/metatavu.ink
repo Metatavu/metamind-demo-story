@@ -33,11 +33,11 @@
 -> END
 
 == introduce_metatavu ==
-    Metatavu on yritys. Haluatko jättää sähköpostiosoitteesi, jotta sinuun otetaan yhteyttä?
+    Metatavu on vuonna 2016 perustettu ohjelmistokehitykseen erikoistunut yritys. Metatavu toteuttaa open source -pohjaisia ohjelmistoprojekteja asiakkaan todelliseen tarpeeseen. Tällä hetkellä yritys pyörii viiden ihmisen voimin. Paremmin en osaa nyt tiivistää, mutta lisätietoa toiminnasta näet selailemalla verkkosivuja! Haluatko viellä keskustella jostakin?
     
     ::SAVE_CHECKPOINT knotname::discuss_about_metatavu
-    + Yes -> ask_for_email_address
-    + No -> show_subjects
+    + Yes -> show_subjects
+    + No -> ask_if_wants_to_get_contacted
     + TellMore -> no_more_to_tell
 -> END
 

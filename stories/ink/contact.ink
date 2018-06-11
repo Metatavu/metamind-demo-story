@@ -32,3 +32,10 @@
     + Yes -> show_subjects
     + No -> end_conversation
 -> END
+
+== ask_if_wants_to_get_contacted == 
+    Haluatko, että metatavun edustaja ottaa sinuun yhteyttä?
+    
+    + Yes -> ask_for_email_address
+    + No -> end_conversation
+-> END
